@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Template</string>
+    <string name="needInternet">Internet is required for the application to work.</string>
+    <string name="please_internet">Please turn on the internet</string>
+</resources>
