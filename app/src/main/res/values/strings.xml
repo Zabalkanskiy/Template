@@ -8,5 +8,5 @@
     <string name="background">Background</string>
     <string name="footbal">Footbal Image</string>
     <string name="result_Button">Your Score</string>
-    <string name="beat_the_bot">Beat the bot in rock paper scissors</string>
+    <string name="beat_the_bot">Beat the bot in rock, paper, scissors</string>
 </resources>

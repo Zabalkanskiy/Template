@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
     private var mCameraPhotoPath: String? = null
 
     private val mQuestionBank: List<Question> = listOf<Question>(
+        Question(resFootbalImage = R.drawable.football),
         Question(resFootbalImage = R.drawable.footbal),
         Question(resFootbalImage = R.drawable.penalty),
         Question(resFootbalImage = R.drawable.penalti),
@@ -106,6 +107,9 @@ class MainActivity : AppCompatActivity() {
                                 view.setBackgroundColor(Color.RED)
                                 loseGame +=1
                             }
+                            firstImageButton.isEnabled = false
+                            secondImageButton.isEnabled = false
+                            thirdImageButton.isEnabled = false
 
                             Handler(Looper.getMainLooper()).postDelayed({
                                 updateImage()
@@ -127,6 +131,9 @@ class MainActivity : AppCompatActivity() {
                                 view.setBackgroundColor(Color.RED)
                                 loseGame +=1
                             }
+                            firstImageButton.isEnabled = false
+                            secondImageButton.isEnabled = false
+                            thirdImageButton.isEnabled = false
 
                             Handler(Looper.getMainLooper()).postDelayed({
                                 updateImage()
@@ -147,6 +154,9 @@ class MainActivity : AppCompatActivity() {
                                 view.setBackgroundColor(Color.RED)
                                 loseGame +=1
                             }
+                            firstImageButton.isEnabled = false
+                            secondImageButton.isEnabled = false
+                            thirdImageButton.isEnabled = false
 
                             Handler(Looper.getMainLooper()).postDelayed({
                                 updateImage()
@@ -249,6 +259,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateImage(){
+        firstImageButton.isEnabled = true
+        secondImageButton.isEnabled = true
+        thirdImageButton.isEnabled = true
         resultButton.setBackgroundColor(Color.WHITE)
         val result = (0 until 10).random()
         if(result<4){
